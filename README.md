@@ -4,9 +4,9 @@
 
 This repo is the "open book" resource / notes for a screenshare that should:
 
-- [x] 1. Provide a running web framework for coding (hapi + sqlite + objection)
+- [x] 1. Provide a running web framework for coding (hapi + objection + sqlite)
 - [x] 2. Publish data via JSON
-- [ ] 3. Import data from CSV
+- [x] 3. Import data from CSV
 
 ### Getting it working locally
 
@@ -16,13 +16,12 @@ This repo is the "open book" resource / notes for a screenshare that should:
 
 `npm run dev`
 
-`touch server/.env` <- .env goes here not in project root
+`touch server/.env` <- ⚠️ .env goes here *not* in project root ⚠️
 
 ENV Variables Required:
 ```
 PORT=3000
-NODE_ENV=development <- this uses knex / mysql and creds below
-#NODE_ENV=local <- this uses a local SQLite .db file
+NODE_ENV=development
 API_KEY=ACA8675309DAD
 ```
 
@@ -32,7 +31,7 @@ API_KEY=ACA8675309DAD
 
 `npx knex migrate:rollback`
 
-`npm run db-wipe` (runs the two commands above in correct sequence)
+`npm run db-reset` (runs the two commands above in correct sequence)
 
 TODO: SEEDING
 
