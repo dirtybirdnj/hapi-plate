@@ -1,0 +1,60 @@
+{
+  "name": "hapi-batt",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server/index.js",
+    "db-reset": "npx knex migrate:rollback && npx knex migrate:latest",
+    "test": "lab -a @hapi/code -I \"__core-js_shared__,CSS,regeneratorRuntime,core\" -L",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@hapi/boom": "^9.1.4",
+    "@hapipal/avocat": "^3.1.0",
+    "@hapipal/haute-couture": "4.x.x",
+    "@hapipal/lalalambda": "^2.0.0",
+    "@hapipal/schwifty": "6.x.x",
+    "blipp": "^4.0.2",
+    "csv-string": "^4.1.0",
+    "csv-to-json": "^0.1.2",
+    "hapi-auth-bearer-token": "^8.0.0",
+    "joi": "17.x.x",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "objection": "2.x.x"
+  },
+  "peerDependencies": {
+    "knex": "0.21.x"
+  },
+  "devDependencies": {
+    "@hapi/code": "8.x.x",
+    "@hapi/eslint-config-hapi": "13.x.x",
+    "@hapi/eslint-plugin-hapi": "4.x.x",
+    "@hapi/glue": "8.x.x",
+    "@hapi/hapi": "20.x.x",
+    "@hapi/hoek": "9.x.x",
+    "@hapi/inert": "6.x.x",
+    "@hapi/lab": "24.x.x",
+    "@hapi/vision": "6.x.x",
+    "@hapipal/confidence": "6.x.x",
+    "@hapipal/hpal": "3.x.x",
+    "@hapipal/hpal-debug": "2.x.x",
+    "@hapipal/toys": "3.x.x",
+    "babel-eslint": "10.x.x",
+    "dotenv": "8.x.x",
+    "eslint": "7.x.x",
+    "exiting": "6.x.x",
+    "hapi-swagger": "14.x.x",
+    "knex": "0.21.x",
+    "serverless": "^3.21.0",
+    "sqlite3": "5.x.x"
+  }
+}
