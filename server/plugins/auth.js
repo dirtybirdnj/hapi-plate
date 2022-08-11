@@ -19,13 +19,7 @@ module.exports = {
                 // Validate your token here
                 //TODO: Read from DB table to find valid API keys
 
-                //console.log(request);
-                //console.log(token);
-                //console.log(process.env.API_KEY);
-
-                //const isValid = token !== process.env.API_KEY;
-                const isValid = true;
-
+                const isValid = token === process.env.API_KEY;
                 const credentials = { token };
                 const artifacts = { test: 'info' };
 

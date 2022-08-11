@@ -2,9 +2,9 @@
 
 ### Overview:
 
-This repo is the solution to a coding test that fulfills the following requirements:
+This repo is the "open book" resource / notes for a screenshare that should:
 
-- [x] 1.
+- [x] 1. Provide a running web framework for coding (hapi + sqlite)
 - [x] 2.
 - [X] 3.
 
