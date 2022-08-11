@@ -4,9 +4,9 @@
 
 This repo is the "open book" resource / notes for a screenshare that should:
 
-- [x] 1. Provide a running web framework for coding (hapi + sqlite)
-- [x] 2.
-- [X] 3.
+- [x] 1. Provide a running web framework for coding (hapi + sqlite + objection)
+- [x] 2. Publish data via JSON
+- [ ] 3. Import data from CSV
 
 ### Getting it working locally
 
